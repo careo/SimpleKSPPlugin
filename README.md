@@ -16,7 +16,7 @@ You need to setup a couple of symbolic links (supported in Windows since Vista) 
 
 `Library/KSP` should be a symlnk to `<kspdir>/KSP.app/Contents/Data/Managed/`.
 
-Open a terminal window and `cd` to this project's root directory, and (substituting `<kspdir>` for the path to whichever KSP install you want:
+Open a terminal window and `cd` to this project's root directory, and (substituting `<kspdir>` for the path to whichever KSP install you want):
 
     ln -s <kspdir>/KSP.app/Contents/Data/Managed/ ./Library/KSP
 
@@ -25,7 +25,7 @@ Open a terminal window and `cd` to this project's root directory, and (substitut
 
 `Library/KSP` should be a symlnk to `<kspdir>/KSP_data/Managed/`
 
-Open a terminal window and `cd` to this project's root directory, and (substituting `<kspdir>` for the path to whichever KSP install you want:
+Open a terminal window and `cd` to this project's root directory, and (substituting `<kspdir>` for the path to whichever KSP install you want):
 
     mklink /D <kspdir>\KSP_data\Managed Library\KSP
 

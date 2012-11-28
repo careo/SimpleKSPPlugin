@@ -5,14 +5,31 @@ Authors:
   * careo <careo@exsurgent.com>
 
 
-
 ## Setup
 
-You need to setup a couple of shortcuts / symlinks:
+You need to setup a couple of symbolic links (supported in Windows since Vista) within the project:
   
-  * `Library/KSP` -- the directory with the DLLs shipped with KSP. On OS X this is `<kspdir>/KSP.app/Contents/Data/Managed/`, and on Windows this is `<kspdir>/KSP_data/Managed`.
+  * `Library/KSP` -- the directory with the DLLs shipped with KSP.
   * `Build/Plugins` --  wherever you want your compiled DLL. I have it pointing to the `Plugins` directory of a "lite" version of KSP I use for development.
 
+### OS X Setup
+
+`Library/KSP` should be a symlnk to `<kspdir>/KSP.app/Contents/Data/Managed/`.
+
+Open a terminal window and `cd` to this project's root directory, and (substituting `<kspdir>` for the path to whichever KSP install you want:
+
+    ln -s <kspdir>/KSP.app/Contents/Data/Managed/ ./Library/KSP
+
+
+### Windows Setup
+
+`Library/KSP` should be a symlnk to `<kspdir>/KSP_data/Managed/`
+
+Open a terminal window and `cd` to this project's root directory, and (substituting `<kspdir>` for the path to whichever KSP install you want:
+
+    mklink /D <kspdir>\KSP_data\Managed Library\KSP
+
+Alternately, you can use the "link shell extension" (TODO: can anyone verify this, provide a link to it?).
 
 
 ## Contributors

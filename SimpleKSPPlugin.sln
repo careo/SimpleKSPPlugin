@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleKSPPlugin", "SimpleKSPPlugin\SimpleKSPPlugin.csproj", "{4538C277-0EDB-4DDD-A379-218BA20B1B57}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4538C277-0EDB-4DDD-A379-218BA20B1B57}.Debug|x86.ActiveCfg = Debug|x86
+		{4538C277-0EDB-4DDD-A379-218BA20B1B57}.Debug|x86.Build.0 = Debug|x86
+		{4538C277-0EDB-4DDD-A379-218BA20B1B57}.Release|x86.ActiveCfg = Release|x86
+		{4538C277-0EDB-4DDD-A379-218BA20B1B57}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = SimpleKSPPlugin\SimpleKSPPlugin.csproj
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = None
+		$1.ResourceNamePolicy = FileFormatDefault
+		$0.ChangeLogPolicy = $2
+		$2.UpdateMode = None
+		$2.MessageStyle = $3
+		$3.LineAlign = 0
+		$2.inheritsSet = Mono
+	EndGlobalSection
+EndGlobal

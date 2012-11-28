@@ -12,6 +12,12 @@ You need to setup a couple of symbolic links (supported in Windows since Vista) 
   * `Library/KSP` -- the directory with the DLLs shipped with KSP.
   * `Build/Plugins` --  wherever you want your compiled DLL. I have it pointing to the `Plugins` directory of a "lite" version of KSP I use for development.
 
+NOTE: You should *not* need to touch the assembly references of the project directly in order to get it to build, creating the links above should be sufficient. In fact, if you *do*  change the references, you will end up with a changed .csproj that uses absolute paths specific (and useful) only to your own KSP install.
+
+In case you do this or existing references, or add new ones and wish to fix it, open the .csproj file in a text editor and find the section that lists the references and edit any hint paths that point to absolute paths to look like:
+
+    <HintPath>..\Library\KSP\Assembly-CSharp.dll</HintPath>
+
 ### OS X Setup
 
 `Library/KSP` should be a symlnk to `<kspdir>/KSP.app/Contents/Data/Managed/`.
